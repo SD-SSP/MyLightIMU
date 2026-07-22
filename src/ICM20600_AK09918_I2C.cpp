@@ -122,7 +122,7 @@ fail_bus:
   return false;
 }
 
-bool init_shared(const init_cfg &cfg, i2c_master_bus_handle_t shared_bus) {
+bool ICM_AK_I2C::init_shared(const init_cfg &cfg, i2c_master_bus_handle_t shared_bus) {
   if (shared_bus == nullptr) return false;
 
   this->bus_owner = false;
